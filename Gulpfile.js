@@ -82,11 +82,11 @@ gulp.task('slim', function () {
 })
 
 gulp.task('image', function() {
-  gulp.src('./src/images/*.jpg')
-    .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}]
-        }))
+  gulp.src('./src/images/*.*')
+    //.pipe(imagemin({
+    //        progressive: true,
+    //        svgoPlugins: [{removeViewBox: false}]
+    //    }))
     .pipe(gulp.dest('public/assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
 })

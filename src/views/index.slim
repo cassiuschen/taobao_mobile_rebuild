@@ -9,6 +9,8 @@ html
     script type="text/javascript" src="/assets/js/jquery.min.js"
     script type="text/javascript" src="/assets/js/react.min.js"
     script type="text/javascript" src="/assets/js/application.min.js"
+    link href="/assets/images/app-icon.png" rel="apple-touch-icon-precomposed"
+    link href="/assets/images/app-icon.png" rel="Shortcut Icon" type="image/x-icon"
   body
     header
       #logo
@@ -16,6 +18,10 @@ html
       .mask
         i.icon.search
         | 寻找宝贝店铺
+    main
+      .view
+        - 100.times
+          .block
     footer
       .actions
         .action
