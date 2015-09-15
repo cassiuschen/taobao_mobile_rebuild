@@ -20,8 +20,20 @@ html
         | 寻找宝贝店铺
     main
       .view
-        - 100.times
-          .block
+        .notification
+          a.close
+          img.logo src="/assets/images/icon.png"
+          span 上客户端，领专属好礼！
+          a.goToApp 立即领取
+        .sliders
+          .slider.active
+            img src="/assets/images/slider1.jpg"
+          .slider-control
+            a.dot.active
+            a.dot
+            a.dot
+            a.dot
+
     footer
       .actions
         .action

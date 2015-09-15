@@ -170,6 +170,7 @@ gulp.task('watch', function() {
 
     // Watch .scss files/
     gulp.watch('src/stylesheets/*.scss', ['scss']);
+    gulp.watch('src/stylesheets/**/*.scss', ['scss']);
     gulp.watch('src/stylesheets/*.css', ['css']);
 
     // Watch .coffee files
