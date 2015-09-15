@@ -1,0 +1,66 @@
+@import "reset";
+@import "font";
+
+$base_font_size: 75px;
+$tb_red: #FE5400;
+
+$header_height: 74px;
+
+@import "icons";
+
+body, html {
+	font-size: $base_font_size;
+}
+
+header {
+	display: block;
+	background-color: $tb_red;
+	height: $header_height;
+	padding: (($header_height - 50px) / 2) 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 0;
+
+	#logo {
+		display: inline-block;
+		height: 50px;
+		width: 60px;
+	}
+
+	#search {
+		width: calc(100vw - 20px - 70px);
+		height: 50px;
+		margin: 0;
+		border: none;
+		float: right;
+		display: inline-block;
+		background-color: #B52600;
+		border-radius: 8px;
+		font-size: 0.34rem;
+		text-align: center;
+		
+		
+		
+	}
+
+	.mask {
+		color: #F0E0DC;
+		font-size: 0.34rem;
+		width: calc(100vw - 20px - 70px);
+		position: absolute;
+		right: 10px;
+		top:  (($header_height - 50px) / 2);
+		display: inline-block;
+		text-align: center;
+		line-height: 50px;
+
+		i {
+			margin-right: 0.1rem;
+		}
+	}
+
+
+
+}
