@@ -123,11 +123,36 @@ i.icon {
   margin-right: 5px;
 }
 i.icon.search::before {
-  content: '\E600';
+  content: "";
+}
+i.icon.home::before {
+  content: "";
+}
+i.icon.home::before {
+  content: "";
+}
+i.icon.transport::before {
+  content: "";
+}
+i.icon.cart::before {
+  content: "";
+}
+i.icon.user::before {
+  content: "";
+}
+i.icon.more::before {
+  content: "";
+}
+i.icon.more::before {
+  content: "";
+}
+i.icon.top::before {
+  content: "";
 }
 
 body, html {
   font-size: 75px;
+  background-color: #EEE;
 }
 
 header {
@@ -171,6 +196,35 @@ header .mask {
 }
 header .mask i {
   margin-right: 0.1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  background-color: #fff;
+  height: 84px;
+  padding: 0;
+  margin: 0;
+  padding-top: 8px;
+}
+footer .actions {
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+footer .actions .action {
+  height: 75px;
+  display: inline-block;
+  font-size: .26rem;
+  color: #5D656B;
+  min-width: calc(100vw / 5);
+}
+footer .actions .action i.icon {
+  display: block;
+  font-size: 0.58rem;
 }
 
 /*# sourceMappingURL=application.css.map */

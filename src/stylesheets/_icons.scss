@@ -6,6 +6,12 @@
 	background-position: center;
 }
 
+@mixin icon($content) {
+	&::before {
+		content: $content;
+	}
+}
+
 i.icon {
 	font-family: 'h5index-iconfont';
 	 font-style: normal;
@@ -16,7 +22,35 @@ i.icon {
 	color: inherit;
     margin-right: 5px;
 
+	
+
 	&.search {
-		&::before { content: '\E600';}
+		@include icon('\E600');
+	}
+
+	&.home {
+		@include icon('\E605');
+	}
+
+	&.home {
+		@include icon('\E605');
+	}
+	&.transport {
+		@include icon('\E601');
+	}
+	&.cart {
+		@include icon('\E604');
+	}
+	&.user {
+		@include icon('\E602');
+	}
+	&.more {
+		@include icon('\E606');
+	}
+	&.more {
+		@include icon('\E606');
+	}
+	&.top {
+		@include icon('\E603');
 	}
 }

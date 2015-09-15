@@ -5,11 +5,13 @@ $base_font_size: 75px;
 $tb_red: #FE5400;
 
 $header_height: 74px;
+$footer_height: 84px;
 
 @import "icons";
 
 body, html {
 	font-size: $base_font_size;
+	background-color: #EEE;
 }
 
 header {
@@ -60,7 +62,33 @@ header {
 			margin-right: 0.1rem;
 		}
 	}
+}
 
-
-
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	border-top: 1px solid #e7e7e7;
+	background-color: #fff;
+	height: $footer_height;
+	padding: 0;
+	margin: 0;
+	padding-top: 8px;
+	.actions {
+		margin: 0 auto;
+		font-size: 0;
+		text-align: center;
+		.action {
+			height: 75px;
+			display: inline-block;
+			font-size: .26rem;
+			color: #5D656B;
+			min-width: calc(100vw / 5);
+			i.icon {
+				display: block;
+				font-size: 0.58rem;
+			}
+		}
+	}
 }
