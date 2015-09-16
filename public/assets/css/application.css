@@ -439,6 +439,7 @@ div[class^="panel-"] {
 }
 .panel-2 .p3 {
   background-image: url("/assets/images/p2-3.png");
+  border-right: 1px solid #e8e8e8;
 }
 .panel-2 .p4 {
   background-image: url("/assets/images/p2-4.png");
