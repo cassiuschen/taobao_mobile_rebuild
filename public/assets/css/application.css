@@ -190,7 +190,7 @@ header #logo {
   width: 60px;
 }
 header #search {
-  width: calc(100vw - 20px - 70px);
+  width: calc(100% - 20px - 70px);
   height: 50px;
   margin: 0;
   border: none;
@@ -204,7 +204,7 @@ header #search {
 header .mask {
   color: #F0E0DC;
   font-size: 0.34rem;
-  width: calc(100vw - 20px - 70px);
+  width: calc(100% - 20px - 70px);
   position: absolute;
   right: 10px;
   top: 12px;
@@ -239,7 +239,7 @@ footer .actions .action {
   display: inline-block;
   font-size: .26rem;
   color: #5D656B;
-  min-width: calc(100vw / 5);
+  min-width: 20%;
 }
 footer .actions .action i.icon {
   display: block;
