@@ -116,6 +116,53 @@ html
             | 热门市场
             a.more
               | 更多
+          .big.shops
+            .shop
+              .info
+                .name 女装
+                .des 专属穿搭
+              .img
+                img src="/assets/images/shop1.jpg"
+            .shop
+              .info
+                .name 鞋包
+                .des 打牌推荐
+              .img
+                img src="/assets/images/shop2.jpg"
+          .shops
+            - shops = [["运动","金秋出游季"], ["男装","秋装来袭！"], ["美妆", "护肤彩妆"], ["母婴", "金秋大换新"]]
+            - i = 0
+            - for shop in shops
+              - i += 1
+              .shop
+                .info
+                  .name = shop.first
+                  .des = shop[1]
+                .img
+                  img src="/assets/images/shop-1-#{i}.jpg"
+          .shops
+            - shops = [["质+","质感男士"], ["iFashion","时尚美搭"], ["家电", "抢天猫定制"], ["家居", "舒适空间"]]
+            - i = 0
+            - for shop in shops
+              - i += 1
+              .shop
+                .info
+                  .name = shop.first
+                  .des = shop.last
+                .img
+                  img src="/assets/images/shop-2-#{i}.jpg"
+
+        .admit
+          .title
+            .divider
+            span 猜你喜欢
+          .cards
+            - 14.times
+              .card
+                .img style="background-image:url(/assets/images/card.jpg)"
+                .title 可爱又萌萌哒的小紫
+                .price ￥22.43
+
     footer
       .actions
         .action

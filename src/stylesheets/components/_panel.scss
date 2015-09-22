@@ -359,6 +359,7 @@ div[class^="panel-"] {
 
 .hot-shop {
 	background-color: #fff;
+	position: relative;
 	.title {
 		height: 0.938rem;
 		width: 100%;
@@ -391,6 +392,58 @@ div[class^="panel-"] {
 				background-size: contain;
 				background-position: center;
 				vertical-align: text-bottom;
+			}
+		}
+	}
+
+	.shops {
+		border-top: $border-style;
+		font-size: 0;
+		line-height: 0;
+
+
+		.shop {
+			width: 25%;
+			border-right: $border-style;
+			display: inline-block;
+			vertical-align: top;
+
+			&:last-child {
+				border-right: none;
+			}
+
+			.info {
+				padding-left: .438rem;
+				padding-top: .344rem;
+				padding-bottom: .031rem;
+				line-height: .5431rem;
+				color: rgb(34,34,34);
+				.name{
+					font-size: 27px;
+				}
+
+				.des {
+					color: rgb(153,153,153);
+					font-size: 22px;
+				}
+			}
+			.img {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		&.big {
+			.shop {
+				width: 50%;
+
+				.info {
+					padding-left: .375rem;
+					padding-bottom: .313rem;
+					line-height: .5431rem;
+				}
 			}
 		}
 	}
