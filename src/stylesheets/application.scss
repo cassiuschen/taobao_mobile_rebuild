@@ -5,14 +5,14 @@ $base_font_size: 75px;
 $tb_red: #FE5400;
 
 $header_height: 74px;
-$footer_height: 84px;
+$footer_height: calc(1rem + 10px);
 
 @import "icons";
 
 body, html {
 	font-size: $base_font_size;
 	background-color: #EEE;
-	overflow: hidden !important;
+	//overflow: hidden !important;
 }
 
 header {
@@ -20,11 +20,12 @@ header {
 	background-color: $tb_red;
 	height: $header_height;
 	padding: (($header_height - 50px) / 2) 10px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	font-size: 0;
+	z-index: 1000;
 
 	#logo {
 		display: inline-block;
@@ -51,7 +52,7 @@ header {
 	.mask {
 		color: #F0E0DC;
 		font-size: 0.34rem;
-		width: calc(100vw - 20px - 70px);
+		width: calc(100% - 20px - 70px);
 		position: absolute;
 		right: 10px;
 		top:  (($header_height - 50px) / 2);
@@ -66,7 +67,8 @@ header {
 }
 
 footer {
-	position: absolute;
+	z-index: 1000;
+	position: fixed;
 	bottom: 0;
 	right: 0;
 	width: 100%;
@@ -95,18 +97,21 @@ footer {
 }
 
 main {
+	z-index: 10;
 	display: block;
-	position: absolute;
-	top: $header_height;
-	bottom: ($footer_height + 1px);
-	left: 0;
-	right: 0;
+	position: relative;
+	margin-top: $header_height;
+	padding-bottom: $footer_height;
+	//top: $header_height;
+	//bottom: ($footer_height + 1px);
+	//left: 0;
+	//right: 0;
 	background-color: transparent;
-	overflow: hidden;
+	//overflow: hidden;
 	.view {
 		overflow: auto;
 		width: 100%;
-		height: 100%;
+		//height: 100%;
 		padding: 0;
 		margin: 0;
 	}

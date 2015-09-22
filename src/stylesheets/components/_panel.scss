@@ -5,7 +5,7 @@ $base_width: 20vw;
 	font-size: 0;
 	margin-bottom: .34rem;
 	.item {
-		width: calc(25vw);
+		width: 25%;
 		text-align: center;
 		line-height: .594rem;
 		font-size: .32rem;
@@ -263,6 +263,135 @@ div[class^="panel-"] {
 		}
 		.item-5 {
 			background-image: url("/assets/images/p4-2-5.jpg");
+		}
+	}
+}
+
+.panel-5 {
+	border-top: 0.031rem solid rgb(58, 210, 152);
+	padding: 0;
+	margin-bottom: 0;
+
+	.label {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 0.594rem;
+		background-image: url("/assets/images/p5-l.png");
+		background-position: 0 0;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+
+	[class^="row"] {
+		width: 100%;
+		padding: 0;
+		height: 2.594rem;
+		font-size: 0;
+
+		* {
+			display: inline-block;
+			vertical-align: middle;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		
+		.info {
+			width: 4rem;
+			height: 100%;
+		}
+
+		[class^="item"] {
+			width: calc(100vw / 3 - 4rem / 3);
+			height: 100%;
+		}
+	}
+
+	.row-1 {
+		border-bottom: $border-style;
+		.info {
+			background-image: url("/assets/images/p5-1-i.png");
+		}
+
+		.item-1 {
+			background-image: url("/assets/images/p5-1-1.jpg");
+		}
+		.item-2 {
+			background-image: url("/assets/images/p5-1-2.jpg");
+		}
+		.item-3 {
+			background-image: url("/assets/images/p5-1-3.png");
+		}
+	}
+
+	.row-2 {
+		.info {
+			background-image: url("/assets/images/p5-2-i.jpg");
+		}
+		[class^="item"] {
+			border-left: $border-style;
+		}
+		.item-1 {
+			background-image: url("/assets/images/p5-2-1.jpg");
+		}
+		.item-2 {
+			background-image: url("/assets/images/p5-2-2.jpg");
+		}
+		.item-3 {
+			background-image: url("/assets/images/p5-2-3.png");
+		}
+	}
+}
+
+.ad {
+	width: 100%;
+	display: block;
+	height: auto;
+	img {
+		width: 100%;
+	}
+}
+*+.ad {
+	margin-bottom: 0;
+}
+
+.hot-shop {
+	background-color: #fff;
+	.title {
+		height: 0.938rem;
+		width: 100%;
+		border-left: .156rem solid $tb-red;
+		padding-right: 15px;
+		border-bottom: $border-style;
+		font-size: 31px;
+		color: rgb(34, 34, 34);
+		padding-left: 0.188rem;
+		line-height: 0.938rem;
+
+		.more {
+			float: right;
+			display: inline-block;
+			text-align: right;
+			font-size: 26px;
+			color: rgb(102, 102, 102);
+			width: 1.281rem;
+			line-height: 0.938rem;
+
+			&:after {
+				display: inline-block;
+				content: ' ';
+				margin-top: 0.281rem;
+				margin-left: 0.094rem;
+				width: 0.391rem;
+				height: 0.406rem;
+				background-image: url("/assets/images/next.png");
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				vertical-align: text-bottom;
+			}
 		}
 	}
 }
