@@ -33,11 +33,14 @@ gulp.task('default', function() {
 // Basic Assets Generate Functions =========================
 
 gulp.task('scss', function() {
-  gulp.src('src/stylesheets/*.scss')
-    .pipe(autoprefixer({
-            browsers: ['last 2 version', '> 5%']
-        }))
-    .pipe(sass({ precision: 30, style: 'expanded' }))
+  gulp.src(['src/stylesheets/*.scss', 'src/stylesheets/**/*.scss'])
+      .pipe(autoprefixer({
+                browsers: ['last 5 Chrome versions', 'iOS > 0', 'Android > 0', '> 5%'],
+                cascade: true,
+                remove:true
+            }))
+    .pipe(sass({precision: 5, sourceMap: false} ))
+    
     //.pipe(uncss({html: ['public/*.html']}))
     .pipe(gulp.dest('public/assets/css'))
     .pipe(rename({suffix: '.min'}))

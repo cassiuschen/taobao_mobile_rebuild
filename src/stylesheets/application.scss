@@ -34,7 +34,7 @@ header {
 	}
 
 	#search {
-		width: calc(100% - 20px - 70px);
+		width: calc(100% - 70px);
 		height: 50px;
 		margin: 0;
 		border: none;
@@ -52,7 +52,7 @@ header {
 	.mask {
 		color: #F0E0DC;
 		font-size: 0.34rem;
-		width: calc(100% - 20px - 70px);
+		width: calc(100% - 70px);
 		position: absolute;
 		right: 10px;
 		top:  (($header_height - 50px) / 2);
