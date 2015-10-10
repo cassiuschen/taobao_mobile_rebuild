@@ -366,7 +366,7 @@ div[class^="panel-"] {
 		border-left: .156rem solid $tb-red;
 		padding-right: 15px;
 		border-bottom: $border-style;
-		font-size: 31px;
+		font-size: .4133333rem;
 		color: rgb(34, 34, 34);
 		padding-left: 0.188rem;
 		line-height: 0.938rem;
@@ -375,9 +375,8 @@ div[class^="panel-"] {
 			float: right;
 			display: inline-block;
 			text-align: right;
-			font-size: 26px;
+			font-size: .346667rem;
 			color: rgb(102, 102, 102);
-			width: 1.281rem;
 			line-height: 0.938rem;
 
 			&:after {
@@ -419,12 +418,12 @@ div[class^="panel-"] {
 				line-height: .5431rem;
 				color: rgb(34,34,34);
 				.name{
-					font-size: 27px;
+					font-size: .36rem;
 				}
 
 				.des {
 					color: rgb(153,153,153);
-					font-size: 22px;
+					font-size: .293333rem;
 				}
 			}
 			.img {

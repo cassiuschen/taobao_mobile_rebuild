@@ -72,8 +72,6 @@ html, body {
   width: 100%; }
 
 * {
-  -webkit-transition: all .28s;
-  transition: all .28s;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -92,8 +90,8 @@ input[type="submit"], input[type="reset"], input[type="button"], button {
   box-sizing: border-box;
   background-image: url("data:image/png;base64,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");
   background-repeat: no-repeat;
-  -webkit-background-size: 54px 40px;
-  background-size: 54px 40px;
+  -webkit-background-size: 0.72rem 0.5333333rem;
+  background-size: 0.72rem 0.5333333rem;
   background-position: center; }
 
 i.icon {
@@ -141,14 +139,32 @@ i.icon {
     text-align: center; }
 
 body, html {
-  font-size: 75px;
   background-color: #EEE; }
+
+body.onload * {
+  display: none; }
+body.onload .loader {
+  display: block !important; }
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #4e525e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  background-image: url("/assets/images/slogan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 5.0625rem auto;
+  background-size: 5.0625rem auto; }
 
 header {
   display: block;
   background-color: #FE5400;
-  height: 74px;
-  padding: 12px 10px;
+  height: 1rem;
+  padding: 0.165rem 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -157,12 +173,12 @@ header {
   z-index: 1000; }
   header #logo {
     display: inline-block;
-    height: 50px;
-    width: 60px; }
+    height: 0.67rem;
+    width: .8rem; }
   header #search {
-    width: -webkit-calc(100% - 70px);
-    width: calc(100% - 70px);
-    height: 50px;
+    width: -webkit-calc(100% - 10px - 0.8rem);
+    width: calc(100% - 10px - 0.8rem);
+    height: .67rem;
     margin: 0;
     border: none;
     float: right;
@@ -175,14 +191,14 @@ header {
   header .mask {
     color: #F0E0DC;
     font-size: 0.34rem;
-    width: -webkit-calc(100% - 70px);
-    width: calc(100% - 70px);
+    width: -webkit-calc(100% - 10px - 0.8rem);
+    width: calc(100% - 10px - 0.8rem);
     position: absolute;
     right: 10px;
-    top: 12px;
+    top: 0.165rem;
     display: inline-block;
     text-align: center;
-    line-height: 50px; }
+    line-height: 0.67rem; }
     header .mask i {
       margin-right: 0.1rem; }
 
@@ -203,7 +219,7 @@ footer {
     font-size: 0;
     text-align: center; }
     footer .actions .action {
-      height: 75px;
+      height: 1rem;
       display: inline-block;
       font-size: .26rem;
       color: #5D656B;
@@ -216,7 +232,7 @@ main {
   z-index: 10;
   display: block;
   position: relative;
-  margin-top: 74px;
+  margin-top: 1rem;
   padding-bottom: calc(1rem + 10px);
   background-color: transparent; }
   main .view {
@@ -237,20 +253,20 @@ main {
     position: absolute;
     top: 0.25rem;
     font-weight: lighter;
-    margin-left: 18px;
+    margin-left: 0.24rem;
     font-size: .32rem; }
   .notification .logo {
-    width: 60px;
-    height: 60px;
+    width: 0.8rem;
+    height: 0.8rem;
     position: absolute;
     top: .16rem;
-    left: 85px; }
+    left: 1.133333rem; }
   .notification span {
     color: #fff;
     line-height: .32rem;
     position: absolute;
     top: .34rem;
-    left: 165px;
+    left: 2.2rem;
     vertical-align: middle; }
   .notification .goToApp {
     position: absolute;
@@ -570,7 +586,7 @@ div[class^="panel-"] {
     border-left: 0.156rem solid #FE5400;
     padding-right: 15px;
     border-bottom: 1px solid #e8e8e8;
-    font-size: 31px;
+    font-size: .4133333rem;
     color: #222222;
     padding-left: 0.188rem;
     line-height: 0.938rem; }
@@ -578,9 +594,8 @@ div[class^="panel-"] {
       float: right;
       display: inline-block;
       text-align: right;
-      font-size: 26px;
+      font-size: .346667rem;
       color: #666666;
-      width: 1.281rem;
       line-height: 0.938rem; }
       .hot-shop .title .more:after {
         display: inline-block;
@@ -613,10 +628,10 @@ div[class^="panel-"] {
         line-height: .5431rem;
         color: #222222; }
         .hot-shop .shops .shop .info .name {
-          font-size: 27px; }
+          font-size: .36rem; }
         .hot-shop .shops .shop .info .des {
           color: #999999;
-          font-size: 22px; }
+          font-size: .293333rem; }
       .hot-shop .shops .shop .img {
         width: 100%; }
         .hot-shop .shops .shop .img img {
@@ -646,28 +661,28 @@ div[class^="panel-"] {
     .admit .title span {
       background-color: #eee;
       color: #5f646e;
-      font-size: 24px;
+      font-size: 0.32rem;
       line-height: 1rem;
       height: 1rem;
-      width: 100px;
+      width: 1.33333333rem;
       text-align: center;
       position: absolute;
       top: 0;
-      left: -webkit-calc(50% - 50px);
-      left: calc(50% - 50px); }
+      left: -webkit-calc(50% - 0.6667rem);
+      left: calc(50% - 0.6667rem); }
   .admit .cards {
     position: relative;
     font-size: 0;
     line-height: 0;
     -webkit-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 10px;
-    column-gap: 10px; }
+    -webkit-column-gap: .13333rem;
+    column-gap: .13333rem; }
     .admit .cards .card {
       display: block;
       width: 100%;
       background-color: #fff;
-      margin-bottom: 10px;
+      margin-bottom: .13333rem;
       -webkit-border-radius: 3px;
       border-radius: 3px;
       min-height: 6.672rem; }
@@ -684,14 +699,14 @@ div[class^="panel-"] {
         width: 100%;
         display: block;
         padding: 0.188rem 0.313rem;
-        font-size: 24px;
+        font-size: .32rem;
         color: #666666;
         line-height: 1.5em !important;
         word-break: break-all; }
       .admit .cards .card .price {
         display: block;
         padding: 0 0.25rem 0.031rem 0.25rem;
-        font-size: 32px;
+        font-size: 0.4267rem;
         line-height: 1.5em;
         width: 100%;
         height: auto;
@@ -717,7 +732,7 @@ div[class^="panel-"] {
     .cc-info .actions .action {
       -webkit-border-radius: 12px;
       border-radius: 12px;
-      font-size: 28px;
+      font-size: .3733333rem;
       display: block;
       height: 0.9375rem;
       line-height: 0.9375rem;
@@ -731,9 +746,9 @@ div[class^="panel-"] {
     text-align: center;
     color: #c3c6ca;
     line-height: 0.5625rem;
-    font-size: 24px; }
+    font-size: .32rem; }
     .cc-info .cc img {
-      height: 24px;
-      margin-left: 15px; }
+      height: .32rem;
+      margin-left: .2rem; }
 
 /*# sourceMappingURL=application.css.map */
