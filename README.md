@@ -1,6 +1,7 @@
 # 淘宝移动端首页重制
 
 陈紫晟，201408223005
+可访问 [http://taobao.static.thecmw.cn](http://taobao.static.thecmw.cn) 以查看网页
 
 ## 文件结构
 
